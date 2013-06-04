@@ -1,0 +1,15 @@
+#!/bin/bash
+# This hook is run after every virtualenv is activated.
+
+PROJECT_ROOT='~/src'
+
+PROJECT=$(basename $VIRTUAL_ENV)
+
+PROJECT_DIR=$PROJECT_ROOT/$PROJECT
+
+if [[ -d $PROJECT_DIR ]]; then
+    echo $PROJECT_DIR
+    cd $PROJECT_DIR
+fi
+
+PROJECT_DIR=
