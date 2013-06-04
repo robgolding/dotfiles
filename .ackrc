@@ -1,35 +1,22 @@
 --smart-case
-
---sort-files
-
-# Always color, even if piping to another program
---color
-
-# Use my less options
---pager=less -iqRS
-
-# HAML & SASS
---type-add=ruby=.haml,.sass,.scss
---type-add=html=.haml
---type-add=css=.sass,.scss
-# LESS
---type-add=css=.less
-# Ruby
---type-add=ruby=Rakefile,Capfile,Gemfile
-# Cucumber
---type-set=cucumber=.feature
-# CoffeeScript
---type-set=coffeescript=.coffee
-# JSON
---type-set=json=.json
---type-add=js=.json
---type-add=yaml=.json
-# Conf
---type-set=conf=.conf,.config
-# Markdown, Textile, Rdoc & POD
---type-set=markdown=.markdown,.md,.mdown,.mkd,.mkdn
---type-set=textile=.textile
---type-set=rdoc=.rdoc
---type-set=pod=.pod
-# documentation
---type-set=documentation=.markdown,.md,.mdown,.mkd,.mkdn,.textile,.rdoc,.pod.txt
+--type-set
+log=.log
+--type-set
+django=.py,.html
+--type-set
+less=.less
+--type-set
+vim=.vim
+--type-set
+puppet=.pp
+--type-set
+fe=.html,.js,.less
+--type-set
+fea=.html,.js,.less,.css
+--type-set
+docs=.markdown,.md,.mdown,.rst
+--ignore-dir=public/media/cache
+--ignore-dir=public/static/cache
+--ignore-dir=build/html
+--ignore-dir=docs/build
+--ignore-dir=migrations
