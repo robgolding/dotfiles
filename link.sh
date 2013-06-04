@@ -1,5 +1,6 @@
 #!/bin/bash
 
+ln -s .ackrc ~/
 ln -s .gitconfig ~/
 ln -s .git.scmbrc ~/
 ln -s .gvimrc ~/
