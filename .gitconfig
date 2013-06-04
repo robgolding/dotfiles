@@ -3,3 +3,5 @@
     name = Rob Golding
 [github]
     user = robgolding63
+[push]
+    default = simple
