@@ -5,3 +5,5 @@
     user = robgolding63
 [push]
     default = simple
+[branch]
+	autosetuprebase = always
