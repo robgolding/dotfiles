@@ -4,7 +4,7 @@ SCRIPT_PATH=$(cd "$(dirname "$0")"; pwd);
 
 git submodule update --init
 
-for file in .ackrc .gitconfig .git.scmbrc .redshift.conf .scm_breeze .taskrc .tmux.conf .tmux.number.sh; do
+for file in .ackrc .gitconfig .git.scmbrc .redshift.conf .scm_breeze .taskrc .tmux .tmux.conf .tmux.number.sh; do
     if [ ! -e ~/$file ]; then
         ln -s $SCRIPT_PATH/$file ~/$file
     elif [ -L ~/$file ]; then
