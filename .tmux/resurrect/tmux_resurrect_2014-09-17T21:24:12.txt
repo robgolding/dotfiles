@@ -1,7 +1,0 @@
-pane	0	0	:irssi	1	:*	0	:/Users/rob	1	mosh-client	:/usr/local/Cellar/mobile-shell/1.2.4/bin/mosh-client serenity | 198.211.124.21 60008
-pane	0	0	:irssi	1	:*	1	:/Users/rob	0	autossh	:autossh -M10000 serenity tail -n0 -f /tmp/irssi-notify
-python /Users/rob/Dropbox/bin/notify.py
-pane	0	1	:zsh	0	:-	0	:/Users/rob	1	zsh	:
-window	0	0	1	:*	cbda,170x29,0,0{138x29,0,0,3,31x29,139,0,4}
-window	0	1	0	:-	cc3f,170x29,0,0,2
-state	0	
