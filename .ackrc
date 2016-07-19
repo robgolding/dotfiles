@@ -1,3 +1,5 @@
+--color
+
 --smart-case
 --type-set
 log=.log
@@ -17,8 +19,14 @@ fea=.html,.js,.less,.css
 docs=.markdown,.md,.mdown,.rst
 --type-set
 jst=.jst
+--type-set
+scss=.scss
+
 --ignore-dir=public/media/cache
 --ignore-dir=public/static/cache
 --ignore-dir=build/html
 --ignore-dir=docs/build
 --ignore-dir=migrations
+--ignore-dir=node_modules
+
+--ignore-file=ext:map
