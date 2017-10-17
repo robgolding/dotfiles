@@ -3,7 +3,7 @@
     name = Rob Golding
 	signingkey = 13A6D5DA
 [github]
-    user = robgolding63
+    user = robgolding
 [push]
     default = upstream
 [branch]
