@@ -1,6 +1,7 @@
 [user]
     email = rob@robgolding.com
     name = Rob Golding
+	signingkey = 13A6D5DA
 [github]
     user = robgolding63
 [push]
