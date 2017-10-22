@@ -5,7 +5,7 @@
 [github]
     user = robgolding
 [push]
-    default = upstream
+    default = current
 [branch]
 	autosetuprebase = always
 [filter "lfs"]
