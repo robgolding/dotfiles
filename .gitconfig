@@ -24,3 +24,7 @@
     fresh = !git checkout develop && git pull && git checkout -b
     freshen = !b=$(git rev-parse --abbrev-ref HEAD) && git checkout develop && git pull && git checkout $b && git merge develop
     lc = "!f() { git commit \"$1\" -m \"Lint \\`$1\\`\"; }; f"
+[core]
+	editor = mvim -v
+[diff "sopsdiffer"]
+	textconv = sops -d
