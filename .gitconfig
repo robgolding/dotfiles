@@ -1,6 +1,6 @@
 [user]
-    email = rob@robgolding.com
-    name = Rob Golding
+    email = rob@golding-day.com
+    name = Rob Golding-Day
 	signingkey = 13A6D5DA
 [github]
     user = robgolding
@@ -25,6 +25,10 @@
     freshen = !b=$(git rev-parse --abbrev-ref HEAD) && git checkout develop && git pull && git checkout $b && git merge develop
     lc = "!f() { git commit \"$1\" -m \"Lint \\`$1\\`\"; }; f"
 [core]
-	editor = mvim -v
+	editor = vim
+	excludesfile = /Users/robgolding/.gitignore
 [diff "sopsdiffer"]
 	textconv = sops -d
+
+[includeIf "gitdir:~/src/zapier/"]
+    path = ~/src/zapier/.gitconfig
