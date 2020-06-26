@@ -26,7 +26,7 @@
     lc = "!f() { git commit \"$1\" -m \"Lint \\`$1\\`\"; }; f"
 [core]
 	editor = vim
-	excludesfile = /Users/robgolding/.gitignore
+	excludesfile = ~/.gitignore
 [diff "sopsdiffer"]
 	textconv = sops -d
 
