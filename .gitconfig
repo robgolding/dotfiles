@@ -12,8 +12,8 @@
 	smudge = git-lfs smudge %f
 	required = true
 	clean = git-lfs clean %f
-[commit]
-	gpgsign = true
+# [commit]
+	# gpgsign = true
 [alias]
 	prlog = "!f() { git log ${1:-develop}..HEAD --reverse --no-merges --pretty='---%n%n**%s** (%h)%n%n%b'; }; f"
     stats = shortlog -sn --since='4 weeks'
