@@ -15,7 +15,7 @@
 # [commit]
 	# gpgsign = true
 [alias]
-	prlog = "!f() { git log ${1:-develop}..HEAD --reverse --no-merges --pretty='---%n%n**%s** (%h)%n%n%b'; }; f"
+	prlog = "!f() { git log ${1:-main}..HEAD --reverse --no-merges --pretty='---%n%n**%s** (%h)%n%n%b'; }; f"
     stats = shortlog -sn --since='4 weeks'
     recent = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format="%(refname:short)"
     recap = log --all --oneline --no-merges --author=rob@robgolding.com
@@ -36,3 +36,5 @@
 	autosquash = true
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+[url "git@gitlab.com:"]
+	insteadOf = https://gitlab.com/
