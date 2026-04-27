@@ -15,5 +15,16 @@ for file in .ackrc .gitconfig .git.scmbrc .redshift.conf .scm_breeze .taskrc .tm
     fi
 done
 
-./.zprezto/bootstrap.sh
+mkdir -p ~/.config
+for dir in fish nvim; do
+    if [ ! -e ~/.config/$dir ]; then
+        ln -s $SCRIPT_PATH/.config/$dir ~/.config/$dir
+    elif [ -L ~/.config/$dir ]; then
+        rm ~/.config/$dir
+        ln -s $SCRIPT_PATH/.config/$dir ~/.config/$dir
+    else
+        echo "Error: File exists and is not a symlink: ~/.config/$dir"
+    fi
+done
+
 ./.vim/bootstrap.sh
