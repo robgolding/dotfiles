@@ -38,3 +38,7 @@
 	insteadOf = https://github.com/
 [url "git@gitlab.com:"]
 	insteadOf = https://gitlab.com/
+[init]
+	defaultBranch = main
+[advice]
+	detachedHead = false
