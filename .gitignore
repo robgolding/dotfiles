@@ -1,1 +1,12 @@
 .DS_Store
+*.pyc
+*.override
+
+.tmux/plugins/
+
+.vim/spell/
+.vim/bundle/
+.vim/plugged/
+.vim/autoload/plug.vim
+.vim/.netrwhist
+.vim/.VimballRecord
