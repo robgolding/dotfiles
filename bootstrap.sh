@@ -14,14 +14,14 @@ for file in .ackrc .gitconfig .git.scmbrc .scm_breeze .tmux .tmux.conf .tmux.num
 done
 
 mkdir -p ~/.config
-for dir in fish nvim; do
-    if [ ! -e ~/.config/$dir ]; then
-        ln -s $SCRIPT_PATH/.config/$dir ~/.config/$dir
-    elif [ -L ~/.config/$dir ]; then
-        rm ~/.config/$dir
-        ln -s $SCRIPT_PATH/.config/$dir ~/.config/$dir
+for path in alacritty fish nvim wezterm starship.toml; do
+    if [ ! -e ~/.config/$path ]; then
+        ln -s $SCRIPT_PATH/.config/$path ~/.config/$path
+    elif [ -L ~/.config/$path ]; then
+        rm ~/.config/$path
+        ln -s $SCRIPT_PATH/.config/$path ~/.config/$path
     else
-        echo "Error: File exists and is not a symlink: ~/.config/$dir"
+        echo "Error: File exists and is not a symlink: ~/.config/$path"
     fi
 done
 
