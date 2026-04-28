@@ -26,7 +26,6 @@ if status is-interactive
 
     alias json='python -m json.tool'
 
-    alias git=hub
     alias gc="git commit"
     alias gpl="git pull"
     alias gps="git push"
