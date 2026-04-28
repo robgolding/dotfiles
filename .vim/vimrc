@@ -26,7 +26,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'hashivim/vim-terraform'
 Plug 'ruanyl/vim-gh-line'
 Plug 'github/copilot.vim'
-Plug 'ggandor/leap.nvim'
 Plug 'nathangrigg/vim-beancount'
 
 call plug#end()
